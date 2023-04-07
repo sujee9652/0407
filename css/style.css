@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Pacifico;
+    src: url(../../webfonts/Pacifico-Regular.woff) format("woff");
+}
+@font-face {
+    font-family: Jua;
+    src: url(../../webfonts/Jua-Regular.woff) format("woff");
+}
+@font-face {
+    font-family: NanumGothicL;
+    src: url(../../webfonts/NanumGothicLight.otf) format("woff");
+}
+@font-face {
+    font-family: NanumGothicB;
+    src: url(../../webfonts/NanumGothicBold.otf) format("woff")
+}
+@font-face {
+    font-family: NanumGothicEB;
+    src: url(../../webfonts/NanumGothicExtraBold.otf) format("woff")
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: NanumGothicL, Arial, "맑은 고딕", sans-serif;
+}
+header {
+    background: url(../images/bg.gif) repeat-x;
+    height: 200px;
+}
+header .head {
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+header .head .logo {
+    position: relative;
+    width: 200px;
+    z-index: 2;
+}
+header .head .logo img {
+    width: 100%;
+    transform: rotate(-20deg);
+}
+header .head .menu {
+    width: 1000px;
+    display: flex;
+    height: 80%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+header .head .menu .top {
+    display: flex;
+    font-family: NanumGothicL;
+}
+header .head .menu .top img {
+    width: 20px;
+}
+header .head .menu .top li {
+    margin-left: 20px;
+}
+header .head .menu .gnb {
+    font-family: NanumGothicB;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.peko {
+    position: relative;
+    background: #ff1d54;
+    height: 800px;
+}
+.peko .inner {
+    position: relative;
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    background: url(../images/ice_material_1.png) center no-repeat,url(../images/strawberry.png) center 30%/700px no-repeat;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    animation: move 2s infinite alternate;
+}
+.peko .bottom {
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+}
+.peko .bottom p:first-child {
+    font: 38px Jua;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    color: #fff;
+}
+.peko .bottom .peko_im {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.peko .bottom .peko_im img {
+    width: 150px;
+    margin: 20px;
+}
+.peko .milk {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font: 300px Pacifico;
+    line-height: 300px;
+    transform: translate(-50%, -55%) rotate(-10deg);
+    text-align: center;
+    color: #2A256D, #fff;
+    opacity: 50%;
+}
+.peko .milk p:last-child {
+    font-size: 250px;
+}
+@keyframes move {
+    0% {bottom: 0; animation-timing-function: ease-out;}
+    50% {bottom: 20px; animation-timing-function: ease-in;}
+    100% {bottom: 0; animation-timing-function: ease-out;}
+}
+.product {
+    position: relative;
+    width: 1440px;
+    height: 1320px;
+}
+.product .inner {
+    display: grid;
+    position: relative;
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+}
+.product .inner .ul {
+    width: 1265px;
+}
